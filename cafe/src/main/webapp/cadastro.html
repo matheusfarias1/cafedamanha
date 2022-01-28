@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastro</title>
+<link rel="icon" href="imagens/cafeIcon.png">
+<link rel="stylesheet" href="identificacao.css">
+</head>
+<body>
+	<div class="conteudo">
+		<div id="cadastro">
+			<form action="inserir">
+				<h1>Cadastro</h1>
+				<p>
+					<label>Seu Nome</label> <input name="nome" required="required"
+						maxlength="30" type="text" placeholder="ex: Fulano Ciclano"
+						class="caixaCad" pattern="[a-z\s]+$+[A-Z]"/>
+				</p>
+				<p>
+					<label>Seu CPF</label> <input name="cpf" required="required" 
+						maxlength="11" minlength="11" type="text" placeholder="ex: 01234567891"
+						class="caixaCad" pattern="[0-9]+$"/>
+				</p>
+				<p>
+					<label>Primeiro Alimento </label> <input name="alimento"
+						maxlength="20" type="text" placeholder="ex: pão" class="caixaCad" pattern="[a-z\s]+$+[A-Z]"/>
+				</p>
+				<p>
+					<label>Segundo Alimento</label> <input name="alimento2"
+						maxlength="20" type="text" placeholder="ex: suco" class="caixaCad" pattern="[a-z\s]+$+[A-Z]"/>
+				</p>
+				<p class="botaoCad">
+					<input type="submit" class="cadastrar" value="Cadastrar"> <a
+						href="index.html" class="botaoHome">Página Inicial</a>
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
